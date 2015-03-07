@@ -1,0 +1,192 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="WP9_DES.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="696" 
+    d:DataContext="{d:DesignData SampleData/MainViewModelSampleData.xaml}"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <!--Pivot Control-->
+        <controls:Pivot Title="Dynamic Events Scheduler" Name="mainPivot">
+
+            <!--Pivot item: Notifications -->
+            <controls:PivotItem>
+                <controls:PivotItem.Header>
+                    <ContentControl Height="100">
+                        <StackPanel>
+                            <TextBlock Text="Notifications" FontSize="40" />
+                        </StackPanel>
+                    </ContentControl>
+                </controls:PivotItem.Header> 
+     
+                <ListBox x:Name="notifyListBox" Margin="0,-25,-12,0" ItemsSource="{Binding}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Margin="0,0,0,6" Orientation="Horizontal">
+                                <toolkit:ContextMenuService.ContextMenu>
+                                    <toolkit:ContextMenu HorizontalAlignment="Center">
+                                        <toolkit:MenuItem Header="Show Map" Click="ShowMapMenuItem_Click" />
+                                    </toolkit:ContextMenu>
+                                </toolkit:ContextMenuService.ContextMenu>
+
+                                <Ellipse Height="30" HorizontalAlignment="Left" Margin="0,12,0,0" Name="ellipse1" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="30" Fill="Red" />
+                                <StackPanel Margin="0,-15,0,6" Orientation="Vertical">
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="{Binding Name}" TextWrapping="NoWrap" Margin="12,0,0,0" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
+                                        <TextBlock Text="{Binding LocType}" TextWrapping="NoWrap" Margin="25,25,0,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
+                                    </StackPanel>
+                                    <TextBlock Text="{Binding Deadline}" TextWrapping="NoWrap" Margin="12,-6,0,0" Style="{StaticResource PhoneTextSubtleStyle}"/>
+                                    <TextBlock Text="{Binding Reason}" TextWrapping="Wrap" Margin="12,3,0,0" Style="{StaticResource PhoneTextSubtleStyle}" Foreground="#FFE8E815" Width="450" />
+                                    <TextBlock Text="{Binding Reason2}" TextWrapping="Wrap" Margin="12,-3,0,0" Style="{StaticResource PhoneTextSubtleStyle}" Foreground="#FFE8E815" Width="450" HorizontalAlignment="Left" />
+                                </StackPanel>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </controls:PivotItem>
+            
+            <!--Pivot item: Task List-->
+            <controls:PivotItem>
+                <controls:PivotItem.Header>
+                    <ContentControl Height="100">
+                        <StackPanel>
+                            <TextBlock Text="Tasks" FontSize="40" />
+                        </StackPanel>
+                    </ContentControl>
+                </controls:PivotItem.Header>
+                
+                <!--Double line list with text wrapping ItemsSource="{Binding Items}" -->
+                <ListBox x:Name="taskListBox" Margin="0,-25,-12,0" ItemsSource="{Binding Path=Items}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Margin="0,0,0,15" Width="432" Orientation="Horizontal">
+                                <toolkit:ContextMenuService.ContextMenu>
+                                    <toolkit:ContextMenu HorizontalAlignment="Center">
+                                        <toolkit:MenuItem Header="Edit / View" Click="EditMenuItem_Click"/>
+                                        <toolkit:MenuItem Header="Delete / Done" Click="DeleteMenuItem_Click"/>
+                                    </toolkit:ContextMenu>
+                                </toolkit:ContextMenuService.ContextMenu>
+                                <TextBlock Text="{Binding NumIndex}" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}" Margin="12,0,0,0" />
+                                <Image Height="75" Width="75" Margin="12,0,0,0" Source="{Binding ImageSource}" />
+                                <StackPanel Margin="0,-6,12,0" Width="432" Orientation="Vertical">
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="{Binding LineOne}" TextWrapping="Wrap" Style="{StaticResource PhoneTextLargeStyle}"/>
+                                        <TextBlock Text="{Binding LineThree}" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}" Margin="25,10,12,0" />
+                                    </StackPanel>
+                                    <TextBlock Text="{Binding LineTwo}" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}" Margin="12,-3,12,0" />
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="{Binding UserID}" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}" Margin="12,-3,12,0" />
+                                        <TextBlock Text="{Binding GroupID}" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}" Margin="12,-3,12,0" Foreground="#9953FFF9" />
+                                    </StackPanel>
+                                </StackPanel>                                                                                      
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </controls:PivotItem>
+ 
+            <!--Pivot item: My Profile -->
+            <controls:PivotItem>
+                <controls:PivotItem.Header>
+                    <ContentControl Height="100">
+                        <StackPanel>
+                            <TextBlock Text="Profile" FontSize="40" />
+                        </StackPanel>
+                    </ContentControl>
+                </controls:PivotItem.Header>
+                <!--Double line list with text wrapping ItemsSource="{Binding Items}" -->
+                <StackPanel Orientation="Vertical" Margin="0,-10,0,0">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Height="40" Name="usernameText" Text="Username: " Width="270" FontSize="20" Margin="20,0,0,0" />
+                        <Button Content="Log Out" Height="55" Name="logOutButton" Width="158" FontSize="15" Margin="5,-5,0,0" BorderThickness="0.5" Click="logOut_Click" />
+                    </StackPanel>          
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Height="40" Name="textBlock8" Text="Current Location  " Width="Auto" FontSize="20" Margin="20,0,0,0" />
+                        <TextBlock Height="43" Margin="5,0,0,0" Name="textBlock2" Text="Lat: Long:" Width="44" FontSize="16" TextWrapping="Wrap" />
+                        <StackPanel Orientation="Vertical">
+                            <TextBlock Height="22" HorizontalAlignment="Left" Margin="0,5,0,0" Name="currentX" Text="" VerticalAlignment="Top" Width="68" FontSize="16" />
+                            <TextBlock FontSize="16" HorizontalAlignment="Left" Margin="0,0,0,0" Name="currentY" Text="" Width="68" Height="22" />
+                        </StackPanel>
+                        <Button BorderThickness="0.5" Content="Location Setting" FontSize="15" Height="55" Name="changeLocButton" Width="158" Click="changeLoc_Click" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Height="170" Margin="0,10,0,0">
+                        <StackPanel Orientation="Vertical" Width="240">
+                            <TextBlock Height="40" Name="myGroupsText" Text="My Groups:" Width="Auto" FontSize="20" Margin="20,0,0,0" />
+                            <ListBox x:Name="groupListBox" Margin="40,-5,-12,0" ItemsSource="{Binding}" VerticalAlignment="Top" Height="129" Width="200" HorizontalContentAlignment="Center" HorizontalAlignment="Left" BorderThickness="0" BorderBrush="White">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal">
+                                            <toolkit:ContextMenuService.ContextMenu>
+                                                <toolkit:ContextMenu HorizontalAlignment="Center">
+                                                    <toolkit:MenuItem Header="View Member List" Click="ViewMemberMenu_Click" />
+                                                    <toolkit:MenuItem Header="Leave this Group" Click="LeaveGroupMenu_Click" />
+                                                </toolkit:ContextMenu>
+                                            </toolkit:ContextMenuService.ContextMenu>
+                                            <TextBlock Text="{Binding GroupID}" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}" Margin="10,0,12,5" />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" Width="210">
+                            <TextBlock Height="40" Name="memberText" Text="Members:" Width="Auto" FontSize="20" Margin="10,0,0,0" />
+                            <ListBox x:Name="memberListBox" Margin="0,-5,-12,0" ItemsSource="{Binding}" VerticalAlignment="Top" Height="129" Width="190" HorizontalContentAlignment="Left" BorderBrush="White" BorderThickness="0">
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding UserID}" TextWrapping="Wrap" Style="{StaticResource PhoneTextSubtleStyle}" Margin="5,-3,12,0" />
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                        </StackPanel>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                        <Button Content="Join A Group" Height="60" Name="joinButton" Width="220" FontSize="20" Margin="0,-10,0,0" Padding="10,1,10,5" BorderThickness="0.5" Click="joinGroup_Click" />
+                        <Button Content="Create New Group" Height="60" Name="createButton" Width="220" FontSize="20" Margin="12,-10,0,0" Padding="10,1,10,5" BorderThickness="0.5" Click="createGroup_Click" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,-15,0,0">
+                        <TextBlock Height="40" Name="textBlock6" Text="Enter Group ID:" Width="150" Margin="20,5,0,0" />
+                        <TextBox Height="66" Name="joinCreateGroupID" Text="" Width="282" FontSize="22" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,-10,0,0">
+                        <TextBlock Height="40" Name="textBlock7" Text="Enter Password:" Width="150" Margin="20,0,0,0" />
+                        <TextBox Height="66" Name="joinCreateGroupPass" Text="" Width="282" FontSize="22" Margin="0,-5,0,0" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="0,-10,0,0">
+                        <TextBlock Height="40" Name="textBlock9" Text="Retype Pass:" Width="150" Margin="20,0,0,0" Visibility="Collapsed" />
+                        <TextBox Height="66" Name="joinCreateGroupPass2" Text="" Width="282" FontSize="22" Margin="0,-5,0,0" Visibility="Collapsed" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Height="65" Name="joinCreateStatus" Text="" Width="290" Margin="20,-5,0,0" Foreground="Red" TextWrapping="Wrap" />
+                        <Button Content="Join" Height="63" Name="joinCreateButton" Width="141" FontSize="20" Margin="0,-22,0,0" Click="joinCreateGroup_Click" />
+                    </StackPanel>
+                </StackPanel>
+
+
+            </controls:PivotItem>
+        </controls:Pivot>
+        <Grid.Background>
+            <ImageBrush ImageSource="/WP9-DES;component/Pic/green-abstract-background2.jpg" Stretch="None" />
+        </Grid.Background>
+    </Grid>
+ 
+    <!--ApplicationBar-->
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/ToolKit.Content/appbar.add.rest.png" Text="Add" Click="AddTaskButton_Click"/>
+            <shell:ApplicationBarIconButton IconUri="/ToolKit.Content/appbar.refresh.rest.png" Text="Refresh" Click="RefreshButton_Click" />
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>

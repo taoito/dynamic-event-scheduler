@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<ServiceConfiguration serviceName="ToDoStorageService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration">
+  <Role name="ToDoWebRole">
+    <Instances count="2" />
+    <ConfigurationSettings>
+      <Setting name="DiagnosticsConnectionString" value="DefaultEndpointsProtocol=https;AccountName=group9;AccountKey=EfK+4RN0CwU+ffGiGLSRNru+nwLrWVKqrJ96hCRCYzKY+i0caB6EHo4271XyFySAMzpeqFxS4ftn+7R3Im9+BA==" />
+      <Setting name="DataConnectionString" value="TableEndpoint=http://group9.table.core.windows.net/;AccountName=group9;AccountKey=EfK+4RN0CwU+ffGiGLSRNru+nwLrWVKqrJ96hCRCYzKY+i0caB6EHo4271XyFySAMzpeqFxS4ftn+7R3Im9+BA==" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

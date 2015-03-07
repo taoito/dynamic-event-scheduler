@@ -1,0 +1,14 @@
+<local:MainViewModel 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"       
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:WP9_DES" 
+    SampleProperty="Sample Text Property Value">
+    
+    <local:MainViewModel.Items>
+        <local:ItemViewModel LineOne="Grocery" LineTwo="10:00 AM" LineThree="04/15/2011"/>
+    </local:MainViewModel.Items>
+    <!--local:MainViewModel.Notifications>
+        <local:ItemViewModel LineOne="Sample Buy Grocery" LineTwo="10:00 AM" LineThree="04/15/2011"/>
+    </local:MainViewModel.Items-->
+    
+</local:MainViewModel>

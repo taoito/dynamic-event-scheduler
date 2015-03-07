@@ -1,0 +1,166 @@
+E:\Projects\C#\WP9-DES\WP9-DES\Bin\Debug\ApplicationIcon.png
+E:\Projects\C#\WP9-DES\WP9-DES\Bin\Debug\Background.png
+E:\Projects\C#\WP9-DES\WP9-DES\Bin\Debug\WP9-DES.dll
+E:\Projects\C#\WP9-DES\WP9-DES\Bin\Debug\WP9-DES.pdb
+E:\Projects\C#\WP9-DES\WP9-DES\Bin\Debug\AppManifest.xaml
+E:\Projects\C#\WP9-DES\WP9-DES\Bin\Debug\WP9_DES.xap
+E:\Projects\C#\WP9-DES\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.dll
+E:\Projects\C#\WP9-DES\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.xml
+E:\Projects\C#\WP9-DES\WP9-DES\obj\Debug\ResolveAssemblyReference.cache
+E:\Projects\C#\WP9-DES\WP9-DES\obj\Debug\App.g.i.cs
+E:\Projects\C#\WP9-DES\WP9-DES\obj\Debug\MainPage.g.i.cs
+E:\Projects\C#\WP9-DES\WP9-DES\obj\Debug\WP9-DES.g.resources
+E:\Projects\C#\WP9-DES\WP9-DES\obj\Debug\WP9-DES.dll
+E:\Projects\C#\WP9-DES\WP9-DES\obj\Debug\WP9-DES.pdb
+E:\Projects\C#\WP9-DES\WP9-DES\obj\Debug\XapCacheFile.xml
+E:\Projects\C#\WP9-DES\WP9-DES\obj\Debug\AddEditTask.g.i.cs
+E:\Projects\C#\WP9-DES\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
+E:\Projects\C#\WP9-DES\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
+E:\Projects\C#\WP9-DES\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
+E:\Projects\C#\WP9-DES\WP9-DES\Bin\Debug\ToolKit.Content\ApplicationBar.Cancel.png
+E:\Projects\C#\WP9-DES\WP9-DES\Bin\Debug\ToolKit.Content\ApplicationBar.Check.png
+E:\Projects\C#\WP9-DES\WP9-DES\Bin\Debug\ToolKit.Content\appbar.add.rest.png
+E:\Projects\C#\WP9-DES\WP9-DES\Bin\Debug\ToolKit.Content\appbar.refresh.rest.png
+E:\Projects\C#\WP9-DES\WP9-DES\obj\Debug\MyProfile.g.i.cs
+E:\Projects\C#\WP9-DES\WP9-DES\obj\Debug\MapPage.g.i.cs
+E:\Projects\C#\WP9-DES\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Maps.dll
+E:\Projects\C#\WP9-DES\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Maps.xml
+C:\Users\PANKAJ\Desktop\WP9-DES\WP9-DES\Bin\Debug\ToolKit.Content\appbar.refresh.rest.png
+C:\Users\PANKAJ\Desktop\WP9-DES\WP9-DES\Bin\Debug\ApplicationIcon.png
+C:\Users\PANKAJ\Desktop\WP9-DES\WP9-DES\Bin\Debug\Background.png
+C:\Users\PANKAJ\Desktop\WP9-DES\WP9-DES\Bin\Debug\ToolKit.Content\ApplicationBar.Cancel.png
+C:\Users\PANKAJ\Desktop\WP9-DES\WP9-DES\Bin\Debug\ToolKit.Content\ApplicationBar.Check.png
+C:\Users\PANKAJ\Desktop\WP9-DES\WP9-DES\Bin\Debug\ToolKit.Content\appbar.add.rest.png
+C:\Users\PANKAJ\Desktop\WP9-DES\WP9-DES\Bin\Debug\WP9-DES.dll
+C:\Users\PANKAJ\Desktop\WP9-DES\WP9-DES\Bin\Debug\WP9-DES.pdb
+C:\Users\PANKAJ\Desktop\WP9-DES\WP9-DES\Bin\Debug\AppManifest.xaml
+C:\Users\PANKAJ\Desktop\WP9-DES\WP9-DES\Bin\Debug\WP9_DES.xap
+C:\Users\PANKAJ\Desktop\WP9-DES\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\PANKAJ\Desktop\WP9-DES\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Maps.dll
+C:\Users\PANKAJ\Desktop\WP9-DES\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\PANKAJ\Desktop\WP9-DES\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Maps.xml
+C:\Users\PANKAJ\Desktop\WP9-DES\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
+C:\Users\PANKAJ\Desktop\WP9-DES\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
+C:\Users\PANKAJ\Desktop\WP9-DES\WP9-DES\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\PANKAJ\Desktop\WP9-DES\WP9-DES\obj\Debug\App.g.i.cs
+C:\Users\PANKAJ\Desktop\WP9-DES\WP9-DES\obj\Debug\AddEditTask.g.i.cs
+C:\Users\PANKAJ\Desktop\WP9-DES\WP9-DES\obj\Debug\MainPage.g.i.cs
+C:\Users\PANKAJ\Desktop\WP9-DES\WP9-DES\obj\Debug\MapPage.g.i.cs
+C:\Users\PANKAJ\Desktop\WP9-DES\WP9-DES\obj\Debug\MyProfile.g.i.cs
+C:\Users\PANKAJ\Desktop\WP9-DES\WP9-DES\obj\Debug\WP9-DES.g.resources
+C:\Users\PANKAJ\Desktop\WP9-DES\WP9-DES\obj\Debug\WP9-DES.dll
+C:\Users\PANKAJ\Desktop\WP9-DES\WP9-DES\obj\Debug\WP9-DES.pdb
+C:\Users\PANKAJ\Desktop\WP9-DES\WP9-DES\obj\Debug\XapCacheFile.xml
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\WP9Demo\WP9-DES\Bin\Debug\ToolKit.Content\appbar.refresh.rest.png
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\WP9Demo\WP9-DES\Bin\Debug\ApplicationIcon.png
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\WP9Demo\WP9-DES\Bin\Debug\Background.png
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\WP9Demo\WP9-DES\Bin\Debug\ToolKit.Content\ApplicationBar.Cancel.png
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\WP9Demo\WP9-DES\Bin\Debug\ToolKit.Content\ApplicationBar.Check.png
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\WP9Demo\WP9-DES\Bin\Debug\ToolKit.Content\appbar.add.rest.png
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\WP9Demo\WP9-DES\Bin\Debug\WP9-DES.dll
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\WP9Demo\WP9-DES\Bin\Debug\WP9-DES.pdb
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\WP9Demo\WP9-DES\Bin\Debug\AppManifest.xaml
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\WP9Demo\WP9-DES\Bin\Debug\WP9_DES.xap
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\WP9Demo\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\WP9Demo\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Maps.dll
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\WP9Demo\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\WP9Demo\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\WP9Demo\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Maps.xml
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\WP9Demo\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\WP9Demo\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\WP9Demo\WP9-DES\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\WP9Demo\WP9-DES\obj\Debug\App.g.i.cs
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\WP9Demo\WP9-DES\obj\Debug\AddEditTask.g.i.cs
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\WP9Demo\WP9-DES\obj\Debug\MainPage.g.i.cs
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\WP9Demo\WP9-DES\obj\Debug\MapPage.g.i.cs
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\WP9Demo\WP9-DES\obj\Debug\MyLocation.g.i.cs
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\WP9Demo\WP9-DES\obj\Debug\MyProfile.g.i.cs
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\WP9Demo\WP9-DES\obj\Debug\WP9-DES.g.resources
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\WP9Demo\WP9-DES\obj\Debug\WP9-DES.dll
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\WP9Demo\WP9-DES\obj\Debug\WP9-DES.pdb
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\WP9Demo\WP9-DES\obj\Debug\XapCacheFile.xml
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\ToolKit.Content\appbar.refresh.rest.png
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\ApplicationIcon.png
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\Background.png
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\ToolKit.Content\ApplicationBar.Cancel.png
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\ToolKit.Content\ApplicationBar.Check.png
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\ToolKit.Content\appbar.add.rest.png
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\WP9-DES.dll
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\WP9-DES.pdb
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\AppManifest.xaml
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\WP9_DES.xap
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Maps.dll
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Maps.xml
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\obj\Debug\App.g.i.cs
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\obj\Debug\AddEditTask.g.i.cs
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\obj\Debug\MainPage.g.i.cs
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\obj\Debug\MapPage.g.i.cs
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\obj\Debug\MyLocation.g.i.cs
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\obj\Debug\MyProfile.g.i.cs
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\obj\Debug\WP9-DES.g.resources
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\obj\Debug\WP9-DES.dll
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\obj\Debug\WP9-DES.pdb
+C:\Users\Thao Nguyen\Downloads\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\obj\Debug\XapCacheFile.xml
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\ToolKit.Content\appbar.refresh.rest.png
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\ApplicationIcon.png
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\Background.png
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\ToolKit.Content\ApplicationBar.Cancel.png
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\ToolKit.Content\ApplicationBar.Check.png
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\ToolKit.Content\appbar.add.rest.png
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\WP9-DES.dll
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\WP9-DES.pdb
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\AppManifest.xaml
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\WP9_DES.xap
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.dll
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Maps.dll
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.xml
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Maps.xml
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\obj\Debug\ResolveAssemblyReference.cache
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\obj\Debug\App.g.i.cs
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\obj\Debug\AddEditTask.g.i.cs
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\obj\Debug\MainPage.g.i.cs
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\obj\Debug\MapPage.g.i.cs
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\obj\Debug\MyLocation.g.i.cs
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\obj\Debug\MyProfile.g.i.cs
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\obj\Debug\WP9-DES.g.resources
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\obj\Debug\WP9-DES.dll
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\obj\Debug\WP9-DES.pdb
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1\App Side\WP9-DES\obj\Debug\XapCacheFile.xml
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\Bin\Debug\ToolKit.Content\appbar.refresh.rest.png
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\Bin\Debug\ApplicationIcon.png
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\Bin\Debug\Background.png
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\Bin\Debug\ToolKit.Content\ApplicationBar.Cancel.png
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\Bin\Debug\ToolKit.Content\ApplicationBar.Check.png
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\Bin\Debug\ToolKit.Content\appbar.add.rest.png
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\Bin\Debug\WP9-DES.dll
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\Bin\Debug\WP9-DES.pdb
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\Bin\Debug\AppManifest.xaml
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\Bin\Debug\WP9_DES.xap
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.dll
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Maps.dll
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Toolkit.dll
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.xml
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Maps.xml
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Toolkit.pdb
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\Bin\Debug\Microsoft.Phone.Controls.Toolkit.xml
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\obj\Debug\ResolveAssemblyReference.cache
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\obj\Debug\App.g.i.cs
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\obj\Debug\AddEditTask.g.i.cs
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\obj\Debug\MainPage.g.i.cs
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\obj\Debug\MapPage.g.i.cs
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\obj\Debug\MyLocation.g.i.cs
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\obj\Debug\MyProfile.g.i.cs
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\obj\Debug\WP9-DES.g.resources
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\obj\Debug\WP9-DES.dll
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\obj\Debug\WP9-DES.pdb
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\obj\Debug\XapCacheFile.xml
+E:\Documents\CSci5221\wp7-group-9-project-1-complete\WP7 Group 9 Project 1 - Extension\App Side\WP9-DES\obj\Debug\Login.g.i.cs

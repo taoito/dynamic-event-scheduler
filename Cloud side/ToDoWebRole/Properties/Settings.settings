@@ -1,0 +1,13 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ToDoWebRole.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DataConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;TableEndpoint=http://group9.table.core.windows.net/;AccountName=group9;AccountKey=EfK+4RN0CwU+ffGiGLSRNru+nwLrWVKqrJ96hCRCYzKY+i0caB6EHo4271XyFySAMzpeqFxS4ftn+7R3Im9+BA==&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">TableEndpoint=http://group9.table.core.windows.net/;AccountName=group9;AccountKey=EfK+4RN0CwU+ffGiGLSRNru+nwLrWVKqrJ96hCRCYzKY+i0caB6EHo4271XyFySAMzpeqFxS4ftn+7R3Im9+BA==</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

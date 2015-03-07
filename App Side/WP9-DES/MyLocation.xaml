@@ -1,0 +1,60 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="WP9_DES.MyLocation"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="Dynamic Events Scheduler" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="My Location" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="40" />
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <TextBlock Height="43" HorizontalAlignment="Left" Margin="33,25,0,0" Name="textBlock1" Text="GPS:" VerticalAlignment="Top" Width="74" FontSize="25" />
+            <RadioButton Content="On" Height="75" HorizontalAlignment="Left" Margin="96,6,0,0" Name="onButton" VerticalAlignment="Top" Width="210" GroupName="GPSCheck" Checked="onButton_Checked" />
+            <TextBlock FontSize="25" Height="43" Margin="33,181,29,0" Name="textBlock2" Text="set a location: (for testing purpose)" VerticalAlignment="Top" />
+            <TextBlock FontSize="25" Height="39" HorizontalAlignment="Left" Margin="113,87,0,0" Name="textBlock3" Text="OR" VerticalAlignment="Top" Width="74" />
+            <RadioButton Content="UMN Campus - Keller Hall" GroupName="mySetLocation" Height="75" HorizontalAlignment="Left" Margin="96,209,0,0" Name="OnCampus" VerticalAlignment="Top" Width="331" Checked="OnCampus_Checked" />
+            <RadioButton Content="1550 University Ave, St Paul" GroupName="mySetLocation" Height="75" HorizontalAlignment="Left" Margin="96,275,0,0" Name="StPaul" VerticalAlignment="Top" Width="354" Checked="StPaul_Checked" />
+            <RadioButton Content="Airport - Mall of America" GroupName="mySetLocation" Height="75" HorizontalAlignment="Left" Margin="96,0,0,233" Name="MOA" VerticalAlignment="Bottom" Width="331" Checked="MOA_Checked" />
+            <Button Content="Save" FontSize="20" Height="67" HorizontalAlignment="Left" Margin="96,576,0,0" Name="button2" VerticalAlignment="Top" Width="221" Click="button2_Click" />
+            <TextBlock FontSize="25" Height="43" Margin="33,145,29,0" Name="textBlock4" Text="Turn off GPS and" VerticalAlignment="Top" />
+            <RadioButton Content="Custom" GroupName="mySetLocation" Height="75" HorizontalAlignment="Left" Margin="96,0,0,165" Name="CustomRadio" VerticalAlignment="Bottom" Width="331" Checked="Custom_Checked" Unchecked="Custom_UnChecked" />
+            <TextBox FontSize="18" Height="64" HorizontalAlignment="Left" Margin="225,455,0,0" Name="customLatText" Text="0" VerticalAlignment="Top" Visibility="Collapsed" Width="150" />
+            <TextBox FontSize="18" Height="64" HorizontalAlignment="Left" Margin="225,503,0,0" Name="customLongText" Text="0" VerticalAlignment="Top" Visibility="Collapsed" Width="150" />
+            <TextBlock FontSize="18" Height="30" HorizontalAlignment="Left" Margin="150,475,0,0" Name="textBlock11" Text="Latitude" VerticalAlignment="Top" Visibility="Collapsed" Width="69" />
+            <TextBlock FontSize="18" Height="30" HorizontalAlignment="Left" Margin="150,523,0,0" Name="textBlock12" Text="Longitude" VerticalAlignment="Top" Visibility="Collapsed" Width="96" />
+        </Grid>
+    </Grid>
+ 
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>

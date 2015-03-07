@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="ToDoWebRole.SchedulerService" CodeBehind="SchedulerService.svc.cs" %>

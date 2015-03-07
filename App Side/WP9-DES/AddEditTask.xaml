@@ -1,0 +1,71 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="WP9_DES.AddEditTask"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="Dynamic Events Scheduler" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="Add New Task" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="56" />
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,-12,12,0">
+            <TextBlock Height="61" HorizontalAlignment="Left" Margin="26,230,0,0" Name="textBlock9" Text="Group:" TextWrapping="Wrap" VerticalAlignment="Top" Width="183" />
+            <TextBlock Height="36" HorizontalAlignment="Left" Margin="26,17,0,0" Name="textBlock1" Text="Name:" VerticalAlignment="Top" Width="84" />
+            <TextBox Height="70" HorizontalAlignment="Left" Margin="116,0,0,0" Name="nameTextBox" Text="" VerticalAlignment="Top" Width="334" FontSize="20" />
+            <TextBlock Height="36" HorizontalAlignment="Left" Margin="26,70,0,0" Name="textBlock2" Text="Date:" VerticalAlignment="Top" Width="84" />
+            <toolkit:DatePicker Margin="0,53,6,517" Height="70" Name="datePicker" Value="00:00:00" HorizontalAlignment="Right" Width="334" />
+            <TextBlock Height="36" HorizontalAlignment="Left" Margin="26,123,0,0" Name="textBlock3" Text="Time:" VerticalAlignment="Top" Width="84" />
+            <toolkit:TimePicker Margin="116,108,6,462" Height="70" Name="timePicker" />
+            <TextBlock HorizontalAlignment="Left" Margin="261,230,0,375" Name="textBlock4" Text="Location Type:" Width="150" TextWrapping="Wrap" />
+            <Button Content="Add" Height="79" HorizontalAlignment="Left" Margin="-2,569,0,0" Name="addEditButton" VerticalAlignment="Top" Width="120" Click="TaskAdd_Click" FontSize="24" />
+            <Button Content="Clear" Height="79" HorizontalAlignment="Right" Margin="0,569,166,0" Name="button2" VerticalAlignment="Top" Width="120" Click="TaskClear_Click" FontSize="24" />
+            <RadioButton Content="Bookstore" Height="72" HorizontalAlignment="Right" Margin="0,251,6,0" Name="bookstoreRadioButton" VerticalAlignment="Top" FontSize="15" GroupName="locButton" Checked="bookstoreChecked" />
+            <RadioButton Content="Grocery" Height="72" HorizontalAlignment="Left" Margin="192,251,0,0" Name="grocRadioButton" VerticalAlignment="Top" FontSize="15" GroupName="locButton" Checked="groceryChecked" IsChecked="True" />
+            <RadioButton Content="Electronics" FontSize="15" GroupName="locButton" Height="72" HorizontalAlignment="Left" Margin="315,297,0,0" Name="electronicsRadioButton" VerticalAlignment="Top" Checked="electronicsChecked" />
+            <TextBlock Height="70" HorizontalAlignment="Left" Margin="26,169,0,0" Name="textBlock6" Text="Reminder Range:" VerticalAlignment="Top" Width="97" TextWrapping="Wrap" TextAlignment="Left" />
+            <TextBox FontSize="20" Height="70" HorizontalAlignment="Right" Margin="0,163,154,0" Name="reminderHour" Text="0" VerticalAlignment="Top" Width="73" TextAlignment="Center" />
+            <TextBlock Height="36" HorizontalAlignment="Right" Margin="0,181,128,0" Name="textBlock7" Text="Hr" VerticalAlignment="Top" Width="30" />
+            <TextBox FontSize="20" Height="70" Margin="336,163,46,0" Name="reminderMin" Text="0" VerticalAlignment="Top" TextAlignment="Center" />
+            <TextBlock HorizontalAlignment="Left" Margin="401,181,0,423" Name="textBlock8" Text="Min" Width="45" />
+            <Button Content="Cancel" Height="79" HorizontalAlignment="Left" Margin="336,569,0,0" Name="button3" VerticalAlignment="Top" Width="120" FontSize="24" Click="TaskCancel_Click" />
+            <RadioButton Content="Barbershop" FontSize="15" GroupName="locButton" Height="72" HorizontalAlignment="Right" Margin="0,297,120,0" Name="barberRadioButton" VerticalAlignment="Top" Checked="barberChecked" />
+            <TextBox FontSize="20" Height="70" HorizontalAlignment="Left" Margin="116,163,0,0" Name="reminderDay" Text="1" TextAlignment="Center" VerticalAlignment="Top" Width="73" />
+            <TextBlock Height="36" HorizontalAlignment="Right" Margin="0,181,220,0" Name="textBlock10" Text="Day" VerticalAlignment="Top" Width="56" />
+            <ListBox x:Name="groupListBox" Height="307" Margin="16,0,263,64" VerticalAlignment="Bottom" ItemsSource="{Binding}" FontSize="10" BorderThickness="1" BorderBrush="White">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <RadioButton Content="{Binding GroupID}" GroupName="gButton" Height="70" HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="Auto" Foreground="White" Background="#BFFFFFFF" BorderBrush="#BFFFFFFF" HorizontalContentAlignment="Stretch" FontFamily="Segoe WP" FontSize="17" VerticalContentAlignment="Top" Checked="group_Checked" />
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <RadioButton Content="Custom Location" FontSize="15" GroupName="locButton" Height="72" HorizontalAlignment="Left" Margin="193,344,0,0" Name="customLocButton" VerticalAlignment="Top" Width="192" Checked="customLoc_Checked" Unchecked="customLoc_UnChecked" />
+            <TextBox Height="64" HorizontalAlignment="Left" Margin="296,403,0,0" Name="customNameText" Text="" VerticalAlignment="Top" Width="150" FontSize="18" Visibility="Collapsed" />
+            <TextBox FontSize="18" Height="64" HorizontalAlignment="Left" Margin="296,453,0,0" Name="customLatText" Text="0" VerticalAlignment="Top" Width="150" Visibility="Collapsed" />
+            <TextBox FontSize="18" Height="64" HorizontalAlignment="Left" Margin="296,501,0,0" Name="customLongText" Text="0" VerticalAlignment="Top" Width="150" Visibility="Collapsed" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="221,423,0,0" Name="textBlock5" Text="Name" VerticalAlignment="Top" Width="69" FontSize="18" Visibility="Collapsed" />
+            <TextBlock FontSize="18" Height="30" HorizontalAlignment="Left" Margin="221,473,0,0" Name="textBlock11" Text="Latitude" VerticalAlignment="Top" Width="69" Visibility="Collapsed" />
+            <TextBlock FontSize="18" Height="30" HorizontalAlignment="Left" Margin="221,521,0,0" Name="textBlock12" Text="Longitude" VerticalAlignment="Top" Width="96" Visibility="Collapsed" />
+        </Grid>
+    </Grid>
+   
+</phone:PhoneApplicationPage>

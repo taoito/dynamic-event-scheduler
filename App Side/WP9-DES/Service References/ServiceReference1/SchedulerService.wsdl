@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="SchedulerService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://csci5221-group9.cloudapp.net/SchedulerService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://csci5221-group9.cloudapp.net/SchedulerService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://csci5221-group9.cloudapp.net/SchedulerService.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://csci5221-group9.cloudapp.net/SchedulerService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/ToDoWebRole" />
+      <xsd:import schemaLocation="http://csci5221-group9.cloudapp.net/SchedulerService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.Device.Location" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ISchedulerService_TestFun_InputMessage">
+    <wsdl:part name="parameters" element="tns:TestFun" />
+  </wsdl:message>
+  <wsdl:message name="ISchedulerService_TestFun_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestFunResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISchedulerService_GetTasksDueSoon_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTasksDueSoon" />
+  </wsdl:message>
+  <wsdl:message name="ISchedulerService_GetTasksDueSoon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTasksDueSoonResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISchedulerService_GetAllTasks_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllTasks" />
+  </wsdl:message>
+  <wsdl:message name="ISchedulerService_GetAllTasks_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllTasksResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISchedulerService_GetMyGroups_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyGroups" />
+  </wsdl:message>
+  <wsdl:message name="ISchedulerService_GetMyGroups_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMyGroupsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISchedulerService_GetGroupMembers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupMembers" />
+  </wsdl:message>
+  <wsdl:message name="ISchedulerService_GetGroupMembers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetGroupMembersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISchedulerService_GetNearbyLocations_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNearbyLocations" />
+  </wsdl:message>
+  <wsdl:message name="ISchedulerService_GetNearbyLocations_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNearbyLocationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISchedulerService_AddTask_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddTask" />
+  </wsdl:message>
+  <wsdl:message name="ISchedulerService_AddTask_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISchedulerService_AddUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddUser" />
+  </wsdl:message>
+  <wsdl:message name="ISchedulerService_AddUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISchedulerService_RemoveTask_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveTask" />
+  </wsdl:message>
+  <wsdl:message name="ISchedulerService_RemoveTask_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveTaskResponse" />
+  </wsdl:message>
+  <wsdl:message name="ISchedulerService_RemoveUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveUser" />
+  </wsdl:message>
+  <wsdl:message name="ISchedulerService_RemoveUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveUserResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ISchedulerService">
+    <wsdl:operation name="TestFun">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISchedulerService/TestFun" message="tns:ISchedulerService_TestFun_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISchedulerService/TestFunResponse" message="tns:ISchedulerService_TestFun_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTasksDueSoon">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISchedulerService/GetTasksDueSoon" message="tns:ISchedulerService_GetTasksDueSoon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISchedulerService/GetTasksDueSoonResponse" message="tns:ISchedulerService_GetTasksDueSoon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTasks">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISchedulerService/GetAllTasks" message="tns:ISchedulerService_GetAllTasks_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISchedulerService/GetAllTasksResponse" message="tns:ISchedulerService_GetAllTasks_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMyGroups">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISchedulerService/GetMyGroups" message="tns:ISchedulerService_GetMyGroups_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISchedulerService/GetMyGroupsResponse" message="tns:ISchedulerService_GetMyGroups_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupMembers">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISchedulerService/GetGroupMembers" message="tns:ISchedulerService_GetGroupMembers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISchedulerService/GetGroupMembersResponse" message="tns:ISchedulerService_GetGroupMembers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNearbyLocations">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISchedulerService/GetNearbyLocations" message="tns:ISchedulerService_GetNearbyLocations_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISchedulerService/GetNearbyLocationsResponse" message="tns:ISchedulerService_GetNearbyLocations_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddTask">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISchedulerService/AddTask" message="tns:ISchedulerService_AddTask_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISchedulerService/AddTaskResponse" message="tns:ISchedulerService_AddTask_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISchedulerService/AddUser" message="tns:ISchedulerService_AddUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISchedulerService/AddUserResponse" message="tns:ISchedulerService_AddUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveTask">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISchedulerService/RemoveTask" message="tns:ISchedulerService_RemoveTask_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISchedulerService/RemoveTaskResponse" message="tns:ISchedulerService_RemoveTask_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/ISchedulerService/RemoveUser" message="tns:ISchedulerService_RemoveUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ISchedulerService/RemoveUserResponse" message="tns:ISchedulerService_RemoveUser_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ISchedulerService" type="tns:ISchedulerService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TestFun">
+      <soap:operation soapAction="http://tempuri.org/ISchedulerService/TestFun" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTasksDueSoon">
+      <soap:operation soapAction="http://tempuri.org/ISchedulerService/GetTasksDueSoon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTasks">
+      <soap:operation soapAction="http://tempuri.org/ISchedulerService/GetAllTasks" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMyGroups">
+      <soap:operation soapAction="http://tempuri.org/ISchedulerService/GetMyGroups" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGroupMembers">
+      <soap:operation soapAction="http://tempuri.org/ISchedulerService/GetGroupMembers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNearbyLocations">
+      <soap:operation soapAction="http://tempuri.org/ISchedulerService/GetNearbyLocations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddTask">
+      <soap:operation soapAction="http://tempuri.org/ISchedulerService/AddTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddUser">
+      <soap:operation soapAction="http://tempuri.org/ISchedulerService/AddUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveTask">
+      <soap:operation soapAction="http://tempuri.org/ISchedulerService/RemoveTask" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoveUser">
+      <soap:operation soapAction="http://tempuri.org/ISchedulerService/RemoveUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SchedulerService">
+    <wsdl:port name="BasicHttpBinding_ISchedulerService" binding="tns:BasicHttpBinding_ISchedulerService">
+      <soap:address location="http://csci5221-group9.cloudapp.net/SchedulerService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

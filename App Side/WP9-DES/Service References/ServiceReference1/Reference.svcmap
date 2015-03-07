@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="db4d4868-a965-4abb-8a28-dbe08a7f8b81" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://csci5221-group9.cloudapp.net/SchedulerService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SchedulerService.xsd" MetadataType="Schema" ID="35ac1d66-0519-4b51-b50c-87b10c59f25a" SourceId="1" SourceUrl="http://csci5221-group9.cloudapp.net/SchedulerService.svc?xsd=xsd1" />
+    <MetadataFile FileName="SchedulerService1.xsd" MetadataType="Schema" ID="32825ccf-fd10-40c2-87d9-0874600009dd" SourceId="1" SourceUrl="http://csci5221-group9.cloudapp.net/SchedulerService.svc?xsd=xsd2" />
+    <MetadataFile FileName="SchedulerService2.xsd" MetadataType="Schema" ID="75d3a8cd-f5b4-43a2-9c89-4531fd13ea5b" SourceId="1" SourceUrl="http://csci5221-group9.cloudapp.net/SchedulerService.svc?xsd=xsd3" />
+    <MetadataFile FileName="SchedulerService4.xsd" MetadataType="Schema" ID="67adf511-f6b5-474d-8229-6df278de965f" SourceId="1" SourceUrl="http://csci5221-group9.cloudapp.net/SchedulerService.svc?xsd=xsd4" />
+    <MetadataFile FileName="SchedulerService.disco" MetadataType="Disco" ID="bf49f0ec-9f26-48bc-bccf-0de2ae3bfc21" SourceId="1" SourceUrl="http://csci5221-group9.cloudapp.net/SchedulerService.svc?disco" />
+    <MetadataFile FileName="SchedulerService.wsdl" MetadataType="Wsdl" ID="6368256f-1235-448f-a0aa-d71c72f5e0ff" SourceId="1" SourceUrl="http://csci5221-group9.cloudapp.net/SchedulerService.svc?wsdl" />
+    <MetadataFile FileName="SchedulerService3.xsd" MetadataType="Schema" ID="01f1a876-ceed-4cc6-bb9e-c28167d9c59c" SourceId="1" SourceUrl="http://csci5221-group9.cloudapp.net/SchedulerService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
