@@ -19,7 +19,7 @@
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot">
         <!--Pivot Control-->
-        <controls:Pivot Title="Dynamic Events Scheduler" Name="mainPivot">
+        <controls:Pivot Title="Dynamic Event Scheduler" Name="mainPivot">
 
             <!--Pivot item: Notifications -->
             <controls:PivotItem>

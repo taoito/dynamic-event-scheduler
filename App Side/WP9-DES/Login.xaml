@@ -25,12 +25,11 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBlock x:Name="PageTitle" Text="Dynamic Events Scheduler" Margin="45,102,46,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="48" TextWrapping="Wrap" Height="123" VerticalAlignment="Top" FontFamily="Segoe WP Bold" />
-            <TextBlock x:Name="ApplicationTitle" Text="CSCI5221-WP9" Style="{StaticResource PhoneTextNormalStyle}" Margin="45,217,143,479" />
-            <TextBlock Margin="45,336,279,349" Name="textBlock1" Style="{StaticResource PhoneTextNormalStyle}" Text="Username:" FontSize="25" />
-            <TextBox Height="77" HorizontalAlignment="Left" Margin="168,0,0,326" Name="usernameTextBox" Text="" VerticalAlignment="Bottom" Width="242" FontSize="25" DataContext="{Binding}" />
-            <TextBlock FontSize="25" Margin="45,403,279,282" Name="textBlock2" Style="{StaticResource PhoneTextNormalStyle}" Text="Password:" />
-            <TextBox DataContext="{Binding}" FontSize="25" Height="76" HorizontalAlignment="Left" Margin="168,0,0,263" Name="passwordTextBox" Text="" VerticalAlignment="Bottom" Width="242" />
+            <TextBlock x:Name="PageTitle" Text="Dynamic Event Scheduler" Margin="45,102,46,0" Style="{StaticResource PhoneTextTitle1Style}" FontSize="48" TextWrapping="Wrap" Height="123" VerticalAlignment="Top" FontFamily="Segoe WP Bold" />
+            <TextBlock Margin="45,332,279,353" Name="textBlock1" Style="{StaticResource PhoneTextNormalStyle}" Text="Username:" FontSize="25" />
+            <TextBox Height="77" HorizontalAlignment="Left" Margin="168,0,0,330" Name="usernameTextBox" Text="" VerticalAlignment="Bottom" Width="242" FontSize="25" DataContext="{Binding}" />
+            <TextBlock FontSize="25" Margin="45,399,279,286" Name="textBlock2" Style="{StaticResource PhoneTextNormalStyle}" Text="Password:" />
+            <TextBox DataContext="{Binding}" FontSize="25" Height="76" HorizontalAlignment="Left" Margin="168,0,0,267" Name="passwordTextBox" Text="" VerticalAlignment="Bottom" Width="242" />
             <Button Content="Log In" Height="77" HorizontalAlignment="Left" Margin="265,554,0,0" Name="logInButton" VerticalAlignment="Top" Width="145" FontSize="25" Click="logInButton_Click" />
             <Button Content="New User" FontSize="25" Height="77" HorizontalAlignment="Left" Margin="35,554,0,0" Name="newUsernameButton" VerticalAlignment="Top" Width="160" Click="NewUsername_Click" />
             <TextBlock FontSize="25" Margin="45,466,279,0" Name="textBlock3" Style="{StaticResource PhoneTextNormalStyle}" Text="Retype PW:" Opacity="1" Height="38" VerticalAlignment="Top" Visibility="Collapsed" />
