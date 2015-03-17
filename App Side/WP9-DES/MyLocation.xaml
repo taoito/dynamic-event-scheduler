@@ -30,13 +30,13 @@
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <TextBlock Height="43" HorizontalAlignment="Left" Margin="33,25,0,0" Name="textBlock1" Text="GPS:" VerticalAlignment="Top" Width="74" FontSize="25" />
             <RadioButton Content="On" Height="75" HorizontalAlignment="Left" Margin="96,6,0,0" Name="onButton" VerticalAlignment="Top" Width="210" GroupName="GPSCheck" Checked="onButton_Checked" />
-            <TextBlock FontSize="25" Height="43" Margin="33,181,29,0" Name="textBlock2" Text="set a location: (for testing purpose)" VerticalAlignment="Top" />
+            <TextBlock FontSize="25" Height="43" Margin="33,181,29,0" Name="textBlock2" Text=" Turn off GPS and set a location:" VerticalAlignment="Top" />
             <TextBlock FontSize="25" Height="39" HorizontalAlignment="Left" Margin="113,87,0,0" Name="textBlock3" Text="OR" VerticalAlignment="Top" Width="74" />
             <RadioButton Content="UMN Campus - Keller Hall" GroupName="mySetLocation" Height="75" HorizontalAlignment="Left" Margin="96,209,0,0" Name="OnCampus" VerticalAlignment="Top" Width="331" Checked="OnCampus_Checked" />
             <RadioButton Content="1550 University Ave, St Paul" GroupName="mySetLocation" Height="75" HorizontalAlignment="Left" Margin="96,275,0,0" Name="StPaul" VerticalAlignment="Top" Width="354" Checked="StPaul_Checked" />
             <RadioButton Content="Airport - Mall of America" GroupName="mySetLocation" Height="75" HorizontalAlignment="Left" Margin="96,0,0,233" Name="MOA" VerticalAlignment="Bottom" Width="331" Checked="MOA_Checked" />
             <Button Content="Save" FontSize="20" Height="67" HorizontalAlignment="Left" Margin="96,576,0,0" Name="button2" VerticalAlignment="Top" Width="221" Click="button2_Click" />
-            <TextBlock FontSize="25" Height="43" Margin="33,145,29,0" Name="textBlock4" Text="Turn off GPS and" VerticalAlignment="Top" />
+            <TextBlock FontSize="25" Height="43" Margin="40,145,22,0" Name="textBlock4" Text="(For testing purpose)" VerticalAlignment="Top" />
             <RadioButton Content="Custom" GroupName="mySetLocation" Height="75" HorizontalAlignment="Left" Margin="96,0,0,165" Name="CustomRadio" VerticalAlignment="Bottom" Width="331" Checked="Custom_Checked" Unchecked="Custom_UnChecked" />
             <TextBox FontSize="18" Height="64" HorizontalAlignment="Left" Margin="225,455,0,0" Name="customLatText" Text="0" VerticalAlignment="Top" Visibility="Collapsed" Width="150" />
             <TextBox FontSize="18" Height="64" HorizontalAlignment="Left" Margin="225,503,0,0" Name="customLongText" Text="0" VerticalAlignment="Top" Visibility="Collapsed" Width="150" />
