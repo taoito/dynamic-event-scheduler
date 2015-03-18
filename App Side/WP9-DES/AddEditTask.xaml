@@ -42,7 +42,7 @@
             <RadioButton Content="Bookstore" Height="72" HorizontalAlignment="Right" Margin="0,251,6,0" Name="bookstoreRadioButton" VerticalAlignment="Top" FontSize="15" GroupName="locButton" Checked="bookstoreChecked" />
             <RadioButton Content="Grocery" Height="72" HorizontalAlignment="Left" Margin="192,251,0,0" Name="grocRadioButton" VerticalAlignment="Top" FontSize="15" GroupName="locButton" Checked="groceryChecked" IsChecked="True" />
             <RadioButton Content="Electronics" FontSize="15" GroupName="locButton" Height="72" HorizontalAlignment="Left" Margin="315,297,0,0" Name="electronicsRadioButton" VerticalAlignment="Top" Checked="electronicsChecked" />
-            <TextBlock Height="70" HorizontalAlignment="Left" Margin="26,169,0,0" Name="textBlock6" Text="Reminder Range:" VerticalAlignment="Top" Width="97" TextWrapping="Wrap" TextAlignment="Left" />
+            <TextBlock Height="70" HorizontalAlignment="Left" Margin="26,169,0,0" Name="textBlock6" Text="Reminder Before" VerticalAlignment="Top" Width="97" TextWrapping="Wrap" TextAlignment="Left" />
             <TextBox FontSize="20" Height="70" HorizontalAlignment="Right" Margin="0,163,154,0" Name="reminderHour" Text="0" VerticalAlignment="Top" Width="73" TextAlignment="Center" />
             <TextBlock Height="36" HorizontalAlignment="Right" Margin="0,181,128,0" Name="textBlock7" Text="Hr" VerticalAlignment="Top" Width="30" />
             <TextBox FontSize="20" Height="70" Margin="336,163,46,0" Name="reminderMin" Text="0" VerticalAlignment="Top" TextAlignment="Center" />

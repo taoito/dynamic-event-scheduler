@@ -152,7 +152,7 @@
                         </StackPanel>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
-                        <Button Content="Join A Group" Height="60" Name="joinButton" Width="220" FontSize="20" Margin="0,-10,0,0" Padding="10,1,10,5" BorderThickness="0.5" Click="joinGroup_Click" />
+                        <Button Content="Join Group" Height="60" Name="joinButton" Width="220" FontSize="20" Margin="0,-10,0,0" Padding="10,1,10,5" BorderThickness="0.5" Click="joinGroup_Click" />
                         <Button Content="Create New Group" Height="60" Name="createButton" Width="220" FontSize="20" Margin="12,-10,0,0" Padding="10,1,10,5" BorderThickness="0.5" Click="createGroup_Click" />
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" Margin="0,-15,0,0">
