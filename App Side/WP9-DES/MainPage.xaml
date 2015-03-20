@@ -184,7 +184,7 @@
     <!--ApplicationBar-->
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
-            <shell:ApplicationBarIconButton IconUri="/ToolKit.Content/appbar.add.rest.png" Text="Add" Click="AddTaskButton_Click"/>
+            <shell:ApplicationBarIconButton IconUri="/ToolKit.Content/appbar.add.rest.png" Text="Add Task" Click="AddTaskButton_Click"/>
             <shell:ApplicationBarIconButton IconUri="/ToolKit.Content/appbar.refresh.rest.png" Text="Refresh" Click="RefreshButton_Click" />
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
