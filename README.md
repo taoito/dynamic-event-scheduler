@@ -26,7 +26,6 @@ member of the household has a copy of this app on their smartphone, the apps can
 
 ###App UI
 The app’s main screen makes use of the Pivot Control: 
-
   * The Pivot Control contains two individual PivotItem controls, each contains a listbox. Data is populated to the ‘All Tasks’ listbox from the Cloud Databases (see more information on the Cloud Section below).
     * The first PivotItem is the Notifications, which updates notifications to remind users of events based on time and/or location.
     * The second PivotItem is All Tasks, which lists all the upcoming to-do items for the users, with information such as preview icon, task name, location, deadline date and time.
@@ -42,3 +41,20 @@ The app’s main screen makes use of the Pivot Control:
 <toolkit: ContextMenuService.ContextMenu>. This menu allows the users to Delete: simply remove the task completely from the list.
   * All actions will be updated to the cloud databases instantly
 
+###App side APIs
+1. Internet Location Service API:
+  * It defines the COM-based (Component Object Model) Internet location service based objects that let your application communicate with other applications over the Internet. A client application makes use of these objects through predefined sets of interfaces to each instance of the object.
+  * IIlsMain interface represents the main object that manages all other ILS objects and is the first COM object a client application must create. Only one ILS object can be created per application instance.
+  * All other objects are created through a method in other objects or by enumerating the objects. For example, we can retrieve an IIlsUser interface pointer through:
+    * IIlsMain::CreateUser, IIlsMain::GetUser,
+    * or through the IEnumIlsUsers interface retrieved through IIlsMain::EnumUsers,
+    * or through the QueryInterface method.
+  * ILS requires the client application to call it from a user interface (UI) thread. A message pump in the caller application is built so that the ILS can receive notification messages.
+  * The notification mechanism uses the connectable object model in the COM architecture NetMeeting provides a software application programming interface (API) that lets programmers and Web-page designers include collaboration and conferencing for applications like sharing, chat, whiteboard, and file transfer.
+
+2. Google Calendar API:
+  * The client application uses the Calendar Data API to create new events, edit or delete existing events, and query for events that match particular criteria. 
+
+3. Bing Maps:
+  * There is a link in the UI connected to the Silverlight and Bing Maps SDK that take the location of desired place or store determined by the output of the above ILS API and show the location on bing maps.
+  * Using the Silverlight Application from the available templates in visual studio, the app creates a map view of desired objects.
