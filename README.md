@@ -81,3 +81,21 @@ Event database structure
 
     This is the namespace that has the classes DataServiceContext , DataServiceQuery etc. that will support the interaction of the client with the database. The app will make use of classes from this namespace.
 
+###Communication between App & Cloud:
+1. Appointment scheduling:
+  * The scheduling of an appointment is initiated by the app and sent to the cloud service, which saves the appointment in the database. This is accomplished via the Windows Communication Foundation (WCF). 
+  * When using WCF, both the app and the cloud service must be running. The WCF service contract includes a public interface with the following function prototype: [OperationContract] bool AddTask(long UserId, long GroupId, Task TheTask);
+  * The Task class is defined to include an appointment's name, date, time, etc. The cloud service is responsible for implementing this function. The user ID and group ID are used to associate this task with a user or group of users. If the task is for a single user, the user ID and group ID are the same. 
+
+2. Retrieving appointment lists:
+  * Appointment lists are kept on the cloud service, and the app will periodically request the current list in order to display it to the user. This is accomplished via the Windows Communication Foundation (WCF).
+  * The WCF service contract includes a public interface with the following function prototypes:
+    * [OperationContract] List<Task> GetAllTasks(List<long> GroupIds);
+    * [OperationContract] List<Task> GetTasksDueSoon(List<long> GroupIds);
+  * The cloud service is responsible for implementing these functions, which are called by the app when it wants an appointment list. The group ID list specifies the groups to which the tasks belong. The first function returns a list of all tasks associated with those group IDs, while the second returns the subset which has a deadline within the next 24 hours.
+
+3. Retrieving nearby locations:
+  * A global list of points of interest is kept on the cloud service, and the app will periodically send the cloud its current coordinates in order to retrieve a list of locations nearby. This is accomplished via WCF.
+  * The WCF service contract includes a public interface with the following function prototype:
+    * [OperationContract] List<Location> GetNearbyLocations(System.Device.Location.GeoCoordinate Coordinates, float Dist);
+  * This function, implemented by the cloud service, returns a list of locations in the database within Dist miles from the specified coordinates.
