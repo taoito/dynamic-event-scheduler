@@ -68,3 +68,16 @@ Event database structure
 
   * The location table stores the GPS coordinates of all locations known to the system. [need to include table]
 
+###Cloud side APIs
+1. Storage Services API: 
+
+    REST is a light weight substitute for web services. It stands for Representational State Transfer. The REST APIs for the Windows Azure Storage services provides developers means to access the Blob, Queue, and Table services in Windows Azure or in the development environment. In our system, the REST APIs are used to access all the storage services. Storage services can be accessed from within a service running in Windows Azure, or directly over the Internet from any application that can send an HTTP/HTTPS request and receive an HTTP/HTTPS response.
+
+2. Table Service Support for .NET Client Library Constructs: 
+
+    This is the client library that will be used with the Table Service. The two main constructs of the client library are the DataServiceContext class and the DataServiceQuery class. DataServiceContext is used to represent the runtime context with a specified data service. The DataServiceQuery class is used to represent a query against storage specified using the ADO.NET Data Services URI syntax.
+
+3. System.Data.Services.Client Namespace
+
+    This is the namespace that has the classes DataServiceContext , DataServiceQuery etc. that will support the interaction of the client with the database. The app will make use of classes from this namespace.
+
