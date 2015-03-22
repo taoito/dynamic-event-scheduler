@@ -58,3 +58,13 @@ The app’s main screen makes use of the Pivot Control:
 3. Bing Maps:
   * There is a link in the UI connected to the Silverlight and Bing Maps SDK that take the location of desired place or store determined by the output of the above ILS API and show the location on bing maps.
   * Using the Silverlight Application from the available templates in visual studio, the app creates a map view of desired objects.
+
+###Cloud side Database
+Event database structure
+
+  * The app has a database stored in the Azure cloud using the Azure Storage Services. The data is stored in the form of tables and hence the Table Service is used for storage, updation, insertion, deletion and querying of these tables. The database structure is shown below: [need to include table]
+
+  * In this table, the tasks that the user wishes to do are stored along with the deadline by which they need to complete it. In addition to the fields above, each task is associated with a GUID for ease of reference.
+
+  * The location table stores the GPS coordinates of all locations known to the system. [need to include table]
+
