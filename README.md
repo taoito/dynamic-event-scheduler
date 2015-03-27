@@ -6,6 +6,8 @@ A planner and reminder system that is aware of and responds dynamically to the u
 
 The system includes two primary components: the Mobile Client App and the Backend Cloud service. The app is responsible for all interactions with the user, and will run on a Windows Phone. User interactions include reminder displays and the entering of new appointments into the system. The cloud service holds the user's data and sends that data to the mobile device on request.
 
+![alt tag](doc/SystemDiagram.png)
+
 ###Use cases
 1. Reminder of a chore based on a specific time. For instance, if the user has to pick up a friend at 4:00 PM and has set the final reminder range to be 30 minutes, then the app will remind the user at 3:30 PM.
 
@@ -40,6 +42,8 @@ The app’s main screen makes use of the Pivot Control:
   * On the main Tasks screen, users can also select a task, tap and hold the item on the list, a menu will be displayed using the ContextMenu from the same toolkit:
 <toolkit: ContextMenuService.ContextMenu>. This menu allows the users to Delete: simply remove the task completely from the list.
   * All actions will be updated to the cloud databases instantly
+
+![alt tag](doc/AppMainScreen.jpg)
 
 ###App side APIs
 1. Internet Location Service API:
