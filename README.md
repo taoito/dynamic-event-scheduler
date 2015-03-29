@@ -54,6 +54,7 @@ The app’s main screen makes use of the Pivot Control:
     * or through the IEnumIlsUsers interface retrieved through IIlsMain::EnumUsers,
     * or through the QueryInterface method.
   * ILS requires the client application to call it from a user interface (UI) thread. A message pump in the caller application is built so that the ILS can receive notification messages.
+![alt tag](doc/ILS_ObjectModel.png)
   * The notification mechanism uses the connectable object model in the COM architecture NetMeeting provides a software application programming interface (API) that lets programmers and Web-page designers include collaboration and conferencing for applications like sharing, chat, whiteboard, and file transfer.
 
 2. Google Calendar API:
