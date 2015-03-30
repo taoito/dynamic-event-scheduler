@@ -1,4 +1,4 @@
-##Dynamic Event Scheduler repository
+﻿##Dynamic Event Scheduler repository
 
 A planner and reminder system that is aware of and responds dynamically to the user's current location and time of day.
 
@@ -67,11 +67,13 @@ The app’s main screen makes use of the Pivot Control:
 ###Cloud side Database
 Event database structure
 
-  * The app has a database stored in the Azure cloud using the Azure Storage Services. The data is stored in the form of tables and hence the Table Service is used for storage, updation, insertion, deletion and querying of these tables. The database structure is shown below: [need to include table]
+  * The app has a database stored in the Azure cloud using the Azure Storage Services. The data is stored in the form of tables and hence the Table Service is used for storage, updation, insertion, deletion and querying of these tables. The database structure is shown below:
+![alt tag](doc/TaskTable.jpg)
 
   * In this table, the tasks that the user wishes to do are stored along with the deadline by which they need to complete it. In addition to the fields above, each task is associated with a GUID for ease of reference.
 
-  * The location table stores the GPS coordinates of all locations known to the system. [need to include table]
+  * The location table stores the GPS coordinates of all locations known to the system.
+![alt tag](doc/LocationTable.jpg)
 
 ###Cloud side APIs
 1. Storage Services API: 
