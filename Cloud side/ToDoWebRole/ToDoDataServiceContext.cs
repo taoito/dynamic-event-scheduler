@@ -19,8 +19,6 @@ public class ToDoDataServiceContext : TableServiceContext, IDataServiceUpdatePro
         this(CloudStorageAccount.FromConfigurationSetting("DataConnectionString").TableEndpoint.ToString(),
         CloudStorageAccount.FromConfigurationSetting("DataConnectionString").Credentials)
     {
-
-
     }
 
     public ToDoDataServiceContext(string baseAddress, StorageCredentials credentials)

@@ -17,7 +17,7 @@ namespace ToDoWebRole
         {
             //Connect to storage
             CloudStorageAccount.SetConfigurationSettingPublisher((configName, configSetter) =>
- configSetter(ConfigurationManager.AppSettings[configName]));
+                                                        configSetter(ConfigurationManager.AppSettings[configName]));
             var sa = CloudStorageAccount.FromConfigurationSetting("DataConnectionString");//AzureConn Changed to DataConnection
 
             //Create context
@@ -31,7 +31,6 @@ namespace ToDoWebRole
             {
                 //Strictly speaking, this is a race condition -- table could come into existence from other source while this block executes. We can ignore it for our purposes. 
                 cloudClient.CreateTableIfNotExist(ToDoDataServiceContext.ToDoTableName);
-
             }
 
             //Ensure that the _ROOT task exists. Ditto race condition possibility, ditto ignore.
