@@ -38,12 +38,7 @@ namespace ToDoWebRole
             Deadline = Deadline.AddHours(-5);
 		}
 
-		public Guid Id_new
-		{
-			get;
-			set;
-		}
-
+		public Guid Id_new { get; set; }
 		public string TaskName { get; set; }
         public System.DateTime Deadline { get; set; }
         public System.DateTime ReminderTime { get; set; }
