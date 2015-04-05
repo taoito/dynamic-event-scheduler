@@ -8,8 +8,6 @@ namespace ToDoWebRole
 {
     public class IdentityDataModel : TableServiceEntity
     {
-        /**/
-        
             public IdentityDataModel(Guid partitionKey, string rowKey)
                 : base(partitionKey.ToString(), rowKey)
             {
@@ -33,12 +31,7 @@ namespace ToDoWebRole
                 this.GroupPass = TheUser.GroupPass;
             }
 
-            public Guid Id_new
-            {
-                get;
-                set;
-            }
-
+            public Guid Id_new { get;set; }
             public string UserId { get; set; }
             public string GroupId { get; set; }
             public string Password { get; set; }
@@ -58,7 +51,5 @@ namespace ToDoWebRole
              }*/
 
             public readonly static Guid ROOT_ID = new Guid("11111111-1111-1111-1111-111111111111");
-        
     }
-        /**/
-    }
+ }
