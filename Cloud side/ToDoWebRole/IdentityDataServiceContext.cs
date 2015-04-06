@@ -20,7 +20,6 @@ public class IdentityDataServiceContext: TableServiceContext, IDataServiceUpdate
         this(CloudStorageAccount.FromConfigurationSetting("DataConnectionString").TableEndpoint.ToString(),
         CloudStorageAccount.FromConfigurationSetting("DataConnectionString").Credentials)
     {
-
     }
     
     public IdentityDataServiceContext(string baseAddress, StorageCredentials credentials)

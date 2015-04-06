@@ -10,9 +10,6 @@ namespace ToDoWebRole
 {
     public class IdentityDataSource
     {
-        /**/
-      
-       /***/
         //Azure Table Storage source
           private IdentityDataServiceContext context = null;
 
@@ -21,8 +18,7 @@ namespace ToDoWebRole
             {
                 //Connect to storage
                 CloudStorageAccount.SetConfigurationSettingPublisher((configName, configSetter) =>
-     configSetter(ConfigurationManager.AppSettings[configName]));
-                //Aditi commented this var sa = CloudStorageAccount.FromConfigurationSetting("AzureConnectionString");
+                                                        configSetter(ConfigurationManager.AppSettings[configName]));
                 var sa = CloudStorageAccount.FromConfigurationSetting("DataConnectionString");
                 //Create context
                 context = new IdentityDataServiceContext(sa.TableEndpoint.ToString(), sa.Credentials);
@@ -34,7 +30,6 @@ namespace ToDoWebRole
                 {
                     //Strictly speaking, this is a race condition -- table could come into existence from other source while this block executes. We can ignore it for our purposes. 
                     cloudClient.CreateTableIfNotExist(IdentityDataServiceContext.IdentityTableName);
-
                 }
 
                 //Ensure that the _ROOT task exists. Ditto race condition possibility, ditto ignore.
@@ -99,9 +94,6 @@ namespace ToDoWebRole
                     outList.Add(new User(iUser));
                 return outList;
             }
-        /**/
-
-
     }
 
 }
