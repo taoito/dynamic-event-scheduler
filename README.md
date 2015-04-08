@@ -101,6 +101,9 @@ Event database structure
     * [OperationContract] List<Task> GetTasksDueSoon(List<long> GroupIds);
   * The cloud service is responsible for implementing these functions, which are called by the app when it wants an appointment list. The group ID list specifies the groups to which the tasks belong. The first function returns a list of all tasks associated with those group IDs, while the second returns the subset which has a deadline within the next 24 hours.
 
+TODO:
+Add Multiuser / MultiGroup Doc and Diagrams
+
 3. Retrieving nearby locations:
   * A global list of points of interest is kept on the cloud service, and the app will periodically send the cloud its current coordinates in order to retrieve a list of locations nearby. This is accomplished via WCF.
   * The WCF service contract includes a public interface with the following function prototype:
