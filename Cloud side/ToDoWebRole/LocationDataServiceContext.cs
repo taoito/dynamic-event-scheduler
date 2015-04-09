@@ -11,20 +11,18 @@ using System.Collections.Generic;
 namespace ToDoWebRole
 {
     public class LocationDataServiceContext : TableServiceContext, IDataServiceUpdateProvider
-    {
-       
-    public const string LocationTableName = "LocationTable";
-    public const string LocationDataModelTypeName = "ToDoWebRole.LocationDataModel";
-    private CloudStorageAccount _storageaccount;
-    private string p;
-    private StorageCredentials storageCredentials;
+    {   
+        public const string LocationTableName = "LocationTable";
+        public const string LocationDataModelTypeName = "ToDoWebRole.LocationDataModel";
+        private CloudStorageAccount _storageaccount;
+        private string p;
+        private StorageCredentials storageCredentials;
 
-    public LocationDataServiceContext() :
-        this(CloudStorageAccount.FromConfigurationSetting("DataConnectionString").TableEndpoint.ToString(),//AzureConnection changed to data
-        CloudStorageAccount.FromConfigurationSetting("DataConnectionString").Credentials)
-    {
-
-    }
+        public LocationDataServiceContext() :
+            this(CloudStorageAccount.FromConfigurationSetting("DataConnectionString").TableEndpoint.ToString(),//AzureConnection changed to data
+            CloudStorageAccount.FromConfigurationSetting("DataConnectionString").Credentials)
+        {
+        }
     
 
   /*  public LocationDataServiceContext(string p, Microsoft.WindowsAzure.StorageCredentials storageCredentials)
@@ -33,23 +31,20 @@ namespace ToDoWebRole
         this.p = p;
         this.StorageCredentials = storageCredentials;
     }*/
-
-
-
-    public LocationDataServiceContext(string baseAddress, StorageCredentials credentials)
-        : base(baseAddress, credentials)
-    {
-        this.p = baseAddress;
-        this.storageCredentials = credentials;
-    }
-
-    public IQueryable<LocationDataModel> LocationTable
-    {
-        get
+        public LocationDataServiceContext(string baseAddress, StorageCredentials credentials)
+            : base(baseAddress, credentials)
         {
-            return this.CreateQuery<LocationDataModel>(LocationTableName);
+            this.p = baseAddress;
+            this.storageCredentials = credentials;
         }
-    }
+
+        public IQueryable<LocationDataModel> LocationTable
+        {
+            get
+            {
+                return this.CreateQuery<LocationDataModel>(LocationTableName);
+            }
+        }
 
     #region IDataServiceUpdateProvider Members
 
@@ -152,8 +147,5 @@ namespace ToDoWebRole
 
     #endregion
 
-}
-          
-       
-    
+    }
 }
