@@ -3,12 +3,9 @@ using System.Data.Services.Common;
 
 namespace ToDoWebRole
 {
-
    [System.ServiceModel.ServiceBehavior(IncludeExceptionDetailInFaults = true)]
     public class LocationDataService : DataService<LocationDataServiceContext>
     {
-        
-        
             // This method is called only once to initialize service-wide policies.
             public static void InitializeService(DataServiceConfiguration config)
             {
@@ -27,10 +24,5 @@ namespace ToDoWebRole
             {
                 base.HandleException(args);
             }
-        
-
-        /***/
-
-
     }
 }
